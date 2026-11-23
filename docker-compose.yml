@@ -1,0 +1,21 @@
+# Arquitectura del prototipo: pipeline por lotes + API + interfaz (también se puede desplegar en una instancia EC2)
+services:
+  pipeline:
+    build: .
+    command: python -m fi.pipeline
+    volumes: ["./data:/app/data"]
+    env_file: [{path: .env, required: false}]
+  api:
+    build: .
+    command: uvicorn fi.api:app --host 0.0.0.0 --port 8000
+    volumes: ["./data:/app/data"]
+    env_file: [{path: .env, required: false}]
+    ports: ["8000:8000"]
+    depends_on:
+      pipeline: {condition: service_completed_successfully}
+  ui:
+    build: .
+    command: streamlit run app/streamlit_app.py --server.address 0.0.0.0 --server.port 8501
+    environment: [FI_API_URL=http://api:8000]
+    ports: ["8501:8501"]
+    depends_on: [api]
