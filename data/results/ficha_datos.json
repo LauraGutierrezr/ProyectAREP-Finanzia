@@ -1,0 +1,12 @@
+{
+  "fuente": "sintetico_sparkov",
+  "P0_registros_crudos": 229241,
+  "P3_eliminados_limpieza": 0,
+  "P4_transacciones_fraude": 1657,
+  "P5_usuarios": 298,
+  "P6_series": 4172,
+  "P9_usuarios_no_vistos": 60,
+  "periodo": "2019-01 a 2020-12",
+  "transacciones_limpias": 227172,
+  "categorias": 14
+}

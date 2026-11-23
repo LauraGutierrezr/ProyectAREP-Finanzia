@@ -1,0 +1,14 @@
+{
+  "n_preguntas": 300,
+  "proveedores": {
+    "plantilla": {
+      "G1_cifras_respaldadas": 1.0,
+      "G3_respuestas_con_cifra_no_respaldada": 0.0,
+      "G5_abstencion_correcta": 1.0,
+      "rechazos_indebidos": 0.0,
+      "exactitud_enrutador": 1.0,
+      "uso_respaldo_plantilla": 0.0,
+      "latencia_p95_s": 0.039
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "A": {
+    "user_id": "U93FB0A59",
+    "alias": "Ana",
+    "escenario": "Usuario estable",
+    "descripcion": "Gasta parecido todos los meses y va bien con su meta."
+  },
+  "B": {
+    "user_id": "U54DACBC0",
+    "alias": "Bruno",
+    "escenario": "Gasto en aumento",
+    "descripcion": "Una categoría discrecional viene subiendo y atrasa su meta."
+  },
+  "C": {
+    "user_id": "U00864152",
+    "alias": "Camila",
+    "escenario": "Gasto inusual",
+    "descripcion": "Este mes aparece un cargo muy por encima de lo habitual."
+  },
+  "D": {
+    "user_id": "UD9AD65A5",
+    "alias": "David",
+    "escenario": "Usuario nuevo",
+    "descripcion": "Solo tiene 3 meses de historia (arranque en frío)."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "U1_precision_sistema": 0.6202008269344359,
+  "U1_precision_B1": 0.41834451901565994,
+  "U1_por_regla": {
+    "R1": 0.645,
+    "R3": 0.567,
+    "R4": 0.612
+  },
+  "U2_en_camino": {
+    "0": {
+      "sistema": 0.5067114093959731,
+      "B1": 0.5067114093959731
+    },
+    "0.25": {
+      "sistema": 0.5167785234899329,
+      "B1": 0.5111856823266219
+    },
+    "0.5": {
+      "sistema": 0.5268456375838926,
+      "B1": 0.5145413870246085
+    },
+    "1.0": {
+      "sistema": 0.5503355704697986,
+      "B1": 0.5313199105145414
+    }
+  },
+  "U3_factibles": 1.0,
+  "U3_en_esenciales": 0,
+  "U3_B1_en_esenciales": 0.7505592841163311,
+  "U4_recomendaciones_por_usuario_mes": 1.8937360178970917,
+  "U5_estudio_humano": "pendiente (requiere participantes; protocolo en la sección 9)",
+  "exito_U1": true
+}

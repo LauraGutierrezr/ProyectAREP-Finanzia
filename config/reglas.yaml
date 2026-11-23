@@ -1,0 +1,25 @@
+# Reglas del motor de recomendación (M6). Se pueden ajustar sin tocar el código.
+parametros:
+  delta_aumento: 0.15          # R1: el gasto previsto supera la mediana de 6 meses en más de 15 %
+  percentil_piso: 25           # nunca se pide bajar de este percentil del propio usuario (12 meses)
+  max_recomendaciones: 3
+  hormiga_monto_max: 25000     # R4: compras pequeñas (COP)
+  hormiga_min_compras: 12      # R4: al menos esta cantidad en el mes
+  hormiga_min_participacion: 0.04
+
+reglas:
+  R1:
+    nombre: Categoría en aumento
+    texto: "Tu gasto en {categoria} va camino a {previsto}, por encima de tu mediana de {mediana}. Volver a {objetivo} liberaría {impacto}."
+  R2:
+    nombre: Gasto inusual
+    texto: "Revisa el cargo de {monto} en {comercio}: es {veces} veces tu gasto típico en {categoria}."
+  R3:
+    nombre: Brecha de la meta
+    texto: "Ajusta {categoria} de {previsto} a {objetivo}: es un nivel que ya lograste antes y acerca tu meta en {impacto} al mes."
+  R4:
+    nombre: Gastos hormiga
+    texto: "Hiciste {n} compras pequeñas en {categoria} que suman {total}. Reducir la mitad liberaría {impacto}."
+  R5:
+    nombre: Vas bien
+    texto: "Vas por buen camino: con el gasto previsto ahorras {ahorro} y tu meta pide {aporte}. Mantén el ritmo."
