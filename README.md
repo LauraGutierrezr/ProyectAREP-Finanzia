@@ -1,6 +1,7 @@
 # Finanzas Inteligentes · Demo del prototipo
 
-Demo funcional del proyecto **«Sistema inteligente para el análisis y apoyo a la toma de decisiones en finanzas personales mediante inteligencia artificial»** (AREP · Laura Valentina Gutiérrez Rico · Prof. Luis Daniel Benavides Navarro).
+Demo funcional del proyecto **«Sistema inteligente para el análisis y apoyo a la toma de decisiones en finanzas personales mediante inteligencia artificial»** 
+AREP - Laura Valentina Gutiérrez Rico - Prof. Luis Daniel Benavides Navarro
 
 La demo implementa la arquitectura del prototipo del documento (secciones 11.3 y 12): un **sistema de IA compuesto** donde cada tarea la resuelve el modelo adecuado y el modelo de lenguaje solo explica resultados ya calculados y verificados.
 
@@ -27,7 +28,6 @@ python --version         # Windows
 Si no aparece una versión entre 3.10 y 3.13, descárgalo de <https://www.python.org/downloads/> (recomendado: 3.12).
 En **Windows**, durante la instalación marca la casilla **«Add python.exe to PATH»**.
 
-No necesitas instalar nada más: el script crea su propio entorno e instala las librerías.
 
 ---
 
